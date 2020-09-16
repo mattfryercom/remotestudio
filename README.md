@@ -1,2 +1,3 @@
 # remotestudio
-Remote Studio Web Application
+Remote Studio
+The Minimal CMS and Framework for Web Developers
