@@ -1,0 +1,176 @@
+$black: rgba(0, 0, 0, 1);
+$bunker: rgba(20, 20, 20, 1);
+$white: rgba(255, 255, 255, 1);
+$alto: rgba(200, 200, 200, 1);
+*
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
+	background: transparent;
+	color: $alto;
+	font-size: 20px;
+	line-height: 1.25em;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Asap, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	vertical-align: middle;
+	transition: all .25s ease-in-out;
+	scroll-behavior: smooth;
+	&:hover
+	{
+		transition: all .25s ease-in-out;
+	}
+}
+header,
+nav,
+main,
+section,
+aside,
+article,
+address,
+footer
+{
+	display: block;
+}
+html,
+body
+{
+	width: 100%;
+	height: auto;
+}
+.default
+{
+	background: $bunker;
+}
+.home
+{
+	.header
+	{
+		padding: 40px;
+		text-align: center;
+		.logo
+		{
+			display: block;
+			max-width: 500px;
+			margin: 0 auto;
+			margin-top: 1.5em;
+		}
+		h1
+		{
+			font-size: 1.4em;
+			margin-top: 4em;
+			color: $alto;
+			font-weight: bold;
+			@media (max-width: 750px)
+			{
+				margin-top: 2em;
+				font-size: 1em;
+			}
+		}
+		p
+		{
+			max-width: 750px;
+			margin: 0 auto;
+			margin-top: 1em;
+			font-size: 1.25em;
+			color: $alto;
+			@media (max-width: 750px)
+			{
+				font-size: 1em;
+			}
+			a
+			{
+				font-weight: bold;
+				color: $white;
+				vertical-align: middle;
+			}
+		}
+	}
+	.editions
+	{
+		max-width: 1000px;
+		margin: 0 auto;
+		.row
+		{
+			padding: 1em;
+			h2
+			{
+				text-align: center;
+				font-size: 1.25em;
+				font-weight: bold;
+				color: $alto;
+			}
+			.section
+			{
+				margin-top: 2em;
+				width: 33.3%;
+				display: inline-block;
+				text-align: center;
+				padding: 1em;
+				border: solid 1px $white;
+				&:first-of-type
+				{
+					background: $black;
+				}
+				&:last-of-type
+				{
+					background: $black;
+				}
+				h3
+				{
+					font-weight: bold;
+					font-size: 1.1em;
+					color: $white;
+				}
+				p
+				{
+					margin-top: 1em;
+				}
+				a
+				{
+					background: $white;
+					color: $bunker;
+					padding: 1em;
+					display: block;
+					margin-top: 2em;
+					border: solid 1px $white;
+					border-radius: 10px;
+					font-weight: bold;
+					&:hover
+					{
+						color: $white;
+						background: $black;
+					}
+				}
+				@media (max-width: 750px)
+				{
+					width: 100%;
+				}
+			}
+		}
+	}
+	.footer
+	{
+		text-align: center;
+		padding: 40px;
+		max-width: 750px;
+		margin: 0 auto;
+		margin-top: 4em;
+		padding-bottom: 200px;
+		a
+		{
+			font-weight: bold;
+			color: $white;
+			vertical-align: top;
+		}
+		p:last-of-type
+		{
+			margin-top: 3em;
+			font-size: .8em;
+		}
+	}
+}
